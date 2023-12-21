@@ -23,3 +23,15 @@ pyenv activate venv-minibank
 ```
 pip install -r requirements.txt
 ```
+
+## Setup
+
+- Create a `.env` file.
+- Get a new secret key:
+```
+openssl rand -hex 32
+```
+- Copy the result to the `.env` file:
+```
+SECRET_KEY="<secret-string>"
+```
